@@ -10,11 +10,11 @@
     Dockerimage: your_docker_image_name
 # Sample pipeline example
  steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
-      - name: build image
-        run: |
-         docker build -t Dockerimage:latest .
+  - name: checkout repo
+    uses: actions/checkout@v2
+  - name: build image
+    run: |
+     docker build -t Dockerimage:latest .
         
       - name: configure aws ecs pipeline
         uses: actions/ecs_composite_action@main
