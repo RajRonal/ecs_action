@@ -9,12 +9,12 @@
     CONTAINER_NAME: your_aws_container_name
     Dockerimage: your_docker_image_name
 # Sample pipeline example
- steps:
-  - name: checkout repo
-    uses: actions/checkout@v2
-  - name: build image
-    run: |
-     docker build -t Dockerimage:latest .
+       steps:
+       - name: checkout repo
+         uses: actions/checkout@v2
+       - name: build image
+         run: |
+          docker build -t Dockerimage:latest .
         
       - name: configure aws ecs pipeline
         uses: actions/ecs_composite_action@main
