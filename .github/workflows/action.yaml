@@ -23,7 +23,9 @@ inputs:
   AWS_TASK_DEFINTION:  
     description: 'ecs task name'
     required: true
-
+  Dockerfile:  
+    description: 'DOCKERFILE'
+    required: true
 
 jobs: 
   build-docker-and-deploy:
