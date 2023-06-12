@@ -1,1 +1,1 @@
-# ecs_action
+# ecs_composite_action
