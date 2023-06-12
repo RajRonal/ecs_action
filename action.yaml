@@ -28,7 +28,8 @@ inputs:
     required: true
 
 runs:
-    using: "composite"
+    using: 'docker'
+    image: 'Dockerfile'
     steps:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
