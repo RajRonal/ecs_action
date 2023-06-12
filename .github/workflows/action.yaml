@@ -30,6 +30,8 @@ inputs:
 runs:
     using: "composite"
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
