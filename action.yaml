@@ -14,10 +14,10 @@ inputs:
   ECS_CLUSTER:  
     description: 'cluster name'
     required: true
-  AWS_ACCESS_KEY_SECRET:  
+  AWS_SECRET_ACCESS_KEY:  
     description: 'secret key'
     required: true
-  AWS_ACCESS_KEY:  
+  AWS_ACCESS_KEY_ID:  
     description: 'access key'
     required: true
   AWS_TASK_DEFINTION:  
@@ -33,8 +33,8 @@ runs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ inputs.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ inputs.AWS_ACCESS_KEY_SECRET }}
+          aws-access-key-id: ${{ inputs.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ inputs.AWS_REGION }}
       - name: login to Amazon ECR
         id: login-ecr
