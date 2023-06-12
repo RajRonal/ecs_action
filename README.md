@@ -9,18 +9,7 @@
     CONTAINER_NAME: your_aws_container_name
     Dockerimage: your_docker_image_name
 # Sample pipeline example
-
-name: Deploy  Environment
-on:
-  push:
-  
-jobs: 
-  build-docker-and-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
+ steps:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: build image
