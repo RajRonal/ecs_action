@@ -20,7 +20,7 @@ inputs:
   AWS_ACCESS_KEY_ID:  
     description: 'access key'
     required: true
-  AWS_TASK_DEFINTION:  
+  AWS_TASK_DEFINITION:  
     description: 'ecs task name'
     required: true
   DOCKER_IMAGE:  
@@ -55,7 +55,7 @@ runs:
         shell: bash
       - name: download task definition
         run: |
-            aws ecs describe-task-definition --task-definition ${{ inputs.AWS_TASK_DEFINTION }} --query taskDefinition > task-definition.json
+            aws ecs describe-task-definition --task-definition ${{ inputs.AWS_TASK_DEFINITION }} --query taskDefinition > task-definition.json
         shell: bash
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
