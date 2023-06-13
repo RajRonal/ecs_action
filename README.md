@@ -3,7 +3,7 @@
     AWS_ACCESS_KEY_ID:  your_aws_access_key
     AWS_SECRET_ACCESS_KEY: your_aws_secret_key
     AWS_REGION: your_aws_region
-    AWS_TASK_DEFINTION: your_aws_task_name
+    AWS_TASK_DEFINITION: your_aws_task_name
     ECS_CLUSTER: your_aws_cluster_name
     ECS_SERVICE: your_aws_service_name
     CONTAINER_NAME: your_aws_container_name
