@@ -8,7 +8,7 @@
     ECS_SERVICE: your_aws_service_name
     CONTAINER_NAME: your_aws_container_name
     DOCKER_IMAGE: your_docker_image_name
-# Sample pipeline example
+# Sample pipeline 
        steps:
        - name: checkout repo
          uses: actions/checkout@v2
