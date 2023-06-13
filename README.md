@@ -7,7 +7,7 @@
     ECS_CLUSTER: your_aws_cluster_name
     ECS_SERVICE: your_aws_service_name
     CONTAINER_NAME: your_aws_container_name
-    Dockerimage: your_docker_image_name
+    DOCKER_IMAGE: your_docker_image_name
 # Sample pipeline example
        steps:
        - name: checkout repo
